@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Cataloge</title>
+    <!-- linking The Main Style File -->
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+<body class="bg-dark">
+    <aside class="position-fixed  d-flex">
+        <section id="SideNavData" class="bg-black flex-column d-flex justify-content-between text-light py-5 pe-5 ps-4">
+            <ul id="navs" class="list-unstyled text-light">
+                <li class="pb-3">
+                    <a id="Nowplaying" class="text-decoration-none text-light">Now playing</a>
+                </li>
+                <li class="pb-3">
+                    <a id="Popular" class="text-decoration-none text-light">Popular</a>
+                </li>
+                <li class="pb-3">
+                    <a id="TopRated" class="text-decoration-none text-light">Top Rated</a>
+                </li>
+                <li class="pb-3">
+                    <a  id="Trending" class="text-decoration-none text-light">Trending</a>
+                </li>
+                <li class="pb-3">
+                    <a id="Upcoming" class="text-decoration-none text-light">Upcoming</a>
+                </li>
+                <li>
+                    <a id="gg"   href="#ContactUs" class="text-decoration-none text-light">Contact Us</a>
+                </li>
+            </ul>
+            <div class="footerSection">
+                <div class="icons">
+                    <i class="fab fa-facebook-f px-1"></i>
+                    <i class="fab fa-twitter px-1"></i>
+                    <i class="fas fa-globe px-1"></i>
+                </div>
+                <div class="copyright text-muted pt-2">
+                    <span>Copyright Â© 2019 All Rights Reserved.</span>
+                </div>
+            </div>
+        </section>
+        <section id="SideNavBar" class="bg-light flex-column d-flex justify-content-between align-items-center text-dark fs-3 py-3">
+            <div id="logo" class="">
+                <img src="./assets/images/logo.png" alt="Logo" class="h-50">
+            </div>
+            <i id="MenuBTN" class="fa fa-align-justify"></i>
+            <div class="flex-column d-flex justify-content-between align-items-center fs-4">
+                <i class="fas fa-globe py-2"></i>
+                <i class="fas fa-share-alt py-2"></i>
+            </div>
+        </section>
+    </aside>
+    <main>
+        <section id="search" class="d-flex justify-content-center p-5">
+            <input class="form-control w-25 m-3 bg-black border-0" type="text" id="searchApi" placeholder="get Movies By Word...">
+            <input class="form-control w-25 m-3 bg-black border-0" type="text" id="searchHere" placeholder="search...">
+        </section>
+        <section id="cards" class="p-5">
+            <div class="container">
+                <div id="Content" class="row g-3">
+                    <div class="col-md-4">
+                        <div class="cardStyle">
+                            <img src="./assets/images/9Gtg2DzBhmYamXBS1hKAhiwbBKS.jpg" class="w-100 h-100 img-fluid" alt="">
+                            <div class="cardData d-flex justify-content-center align-items-center">
+                                <div class=" text-center fw-bold p-3">
+                                    <h2 class="fs-2 fw-bolder">Movie Name</h2>
+                                    <p class="text-secondary">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Laborum, inventore ut. Dolorem ut quos unde? Rerum voluptatum iure porro quasi!</p>
+                                    <p class="fw-bold">Rate: <span class="fw-normal">7.5</span></p>
+                                    <p >Release Date : <span class="fw-normal">22/5/1998</span></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="ContactUs" class="p-5 container">
+            <div class="text-light fw-lighter">
+                <h2>ContactUs...</h2>
+            </div>
+            <div class="container">
+                <div class="row g-3">
+                    <div class="col-md-6">
+                        <input type="text" id="Name" class="form-control contactInput" placeholder="Enter Your Name">
+                        <div class="alert alert-danger d-none" role="alert" id="alertName">
+                            Enter Name With no spaces or spicial characters
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="email" id="Email" class="form-control contactInput" placeholder="Enter Your Email">
+                        <div class="alert alert-danger d-none" role="alert" id="alertEmail">
+                            make Sure the mail has no spaces and include @ and .com
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="Phone" class="form-control contactInput" placeholder="Enter Your Phone">
+                        <div class="alert alert-danger d-none" role="alert" id="alertPhone">
+                            Phone has no characters just digits
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="text" id="Age" class="form-control contactInput" placeholder="Enter Your Age">
+                        <div class="alert alert-danger d-none" role="alert" id="alertAge">
+                            it`s Age 
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="Password" class="form-control contactInput" placeholder="Enter Your Password">
+                        <div class="alert alert-danger d-none" role="alert" id="alertPassword">
+                            at least 8 characters and include litter
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <input type="password" id="PasswordConferm" class="form-control contactInput" placeholder="Enter Your Password Conferm">
+                        <div class="alert alert-danger d-none" role="alert" id="alertrePassword">
+                            make sure its equel to password value
+                        </div>
+                    </div>
+                    <div class="col-md-12">
+                        <button disabled type="submit" id="submit" class="btn btn-outline-danger w-100 ">Submit</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <script type="module" src="./assets/js/main.js"></script>
+</body>
+</html>

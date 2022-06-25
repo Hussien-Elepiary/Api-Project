@@ -1,0 +1,32 @@
+/* Importing the Fontawesome File */
+@import url(./../librarys/fontawesome/css/all.min.css);
+
+/* importing the BootStrap File */
+@import url(./../librarys/bootstrap/css/bootstrap.min.css);
+
+aside{
+    z-index: 99999999;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    transition: 0.8s;
+}
+
+.cardStyle div.cardData{
+    background-color: #ffffffdd;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 100%;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.8s;
+}
+.cardStyle{
+    overflow: hidden;
+    position: relative;
+}
+.cardStyle:hover div{
+    top: 0%;
+}
